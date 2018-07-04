@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html>
+<style>
+body  {
+    background-image: url("photos/back.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+</style>
+  <head>
+
+
+    <title>Gear Down Airport Information Serive</title>
+    <%= csrf_meta_tags %>
+    <%= stylesheet_link_tag    'application', media: 'all' %>
+    <%= javascript_include_tag 'application' %>
+
+    <link rel='stylesheet' href='//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' />
+    <!-- https://bootswatch.com/simplex/ -->
+    <link rel='stylesheet' href='//maxcdn.bootstrapcdn.com/bootswatch/3.3.7/yeti/bootstrap.min.css' />
+    <style href='//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js'></style>
+  </head>
+
+  <body>
+   
+
+
+   
+    <%= render 'layouts/header' %>
+
+
+    <%# <%= image_tag("photos/back.png", width: "900px") %> %>
+    <div class='container'>
+      <p class="notice"><%= notice %></p>
+      <p class="alert"><%= alert %></p>
+        
+      <%= yield %>
+    </div>
+  </body>
+ 
+</html>
